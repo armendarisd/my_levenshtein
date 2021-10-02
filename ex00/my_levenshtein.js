@@ -1,6 +1,5 @@
-const str1 = 'hitting';
-const str2 = 'kitte00';
-const levenshteinDistance = (str1 = '', str2 = '') => {
+
+const my_levenshtein = (str1 = '', str2 = '') => {
     if(str1.length==str2.length){
         const track = Array(str2.length + 1).fill(null).map(() =>
         Array(str1.length + 1).fill(null));
@@ -28,4 +27,3 @@ const levenshteinDistance = (str1 = '', str2 = '') => {
 
    
 };
-console.log(levenshteinDistance(str1, str2));
